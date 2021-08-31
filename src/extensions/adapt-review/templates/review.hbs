@@ -1,0 +1,63 @@
+<div id="tabs">
+  <form>
+    <ul class="tab-list">
+      <li><a href="#tabs-1" class="add-tab">Add comment</a></li>
+      <li><a href="#tabs-2" class="previous-tab">Previous comments</a></li>
+    </ul>
+    <div id="tabs-1">
+      <div class="reviewer-input">
+        <label for="reviewer">Enter your name</label>
+        <input type="text" name="reviewer" id="reviewer" />
+      </div>
+      <p>Add a review</p>
+      <textarea name="" id="review-input"></textarea>
+
+      <div>
+        <label for="priority">Priority :</label>
+        <select name="priority" id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+      <div class="button-container">
+        <button id="addBtn" class="add-btn">Add</button>
+        <button id="cancelBtn" class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+    <div id="tabs-2">
+      <ul id="review-list" class="review-list" style="list-style: none; margin: 0; padding: 0">
+        {{#each comments}}
+          <div class="review-list-item" data-id="{{_id}}">
+            <div class="review-info">
+              <p>{{createdBy}} - </p>
+              <span> {{createdAt}}</span>
+            </div>
+            <div class="review-description">
+              <p class="review-comment">{{this.description}}</p>
+              <a class="edit-review edit-comment-{{_id}}" data-id="{{_id}}">
+                update
+              </a>
+
+              <a class="save-review edit-comment-{{_id}}" data-id="{{_id}}">
+                save
+              </a>
+              <a class="cancel-review edit-comment-{{_id}}" data-id="{{_id}}">
+                cancel
+              </a>
+
+            </div>
+
+          </div>
+        {{/each}}
+      </ul>
+    </div>
+  </form>
+</div>
+
+<div id="addReview" class="ui-widget">
+  <div class="review__inner">
+    <a href="#">Add a review</a>
+    <img src="assets/comment.png" width="50px" height="50px" />
+  </div>
+</div>

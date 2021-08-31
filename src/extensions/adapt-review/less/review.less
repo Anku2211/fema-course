@@ -1,0 +1,188 @@
+p {
+  margin: 0;
+}
+.review {
+  position: fixed;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  border: 2px solid #007fff;
+  border-radius: 4px;
+  margin: 4px 4px;
+  background-color: #007fff;
+}
+
+.review__inner {
+  margin: 5px 5px;
+
+  & img {
+    width: 15px;
+    height: 15px;
+    min-width: auto;
+    display: inline-block;
+  }
+  & a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  font-size: 1em;
+}
+.ui-tabs .ui-tabs-panel {
+  display: block;
+  padding: 1em 1.4em;
+  height: 100%;
+  background: #edf5ff;
+  border: 1px solid #616060;
+}
+
+.ui-draggable,
+.ui-droppable {
+  background-position: top;
+}
+#tabs {
+  // padding: 10px;
+  border: none !important;
+}
+#tab-2 {
+  border: 1px solid #616060;
+}
+.review-list-item {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #616060;
+  margin: 10px 0;
+}
+.review-description,
+.review-info {
+  display: flex;
+  // justify-content: space-around;
+}
+.review-description {
+  padding: 10px 0;
+  justify-content: space-between;
+  & p {
+    width: 80%;
+  }
+}
+.cancel-review{
+  width: 10% !important;;
+}
+.cancel-review, .save-review{
+  display: none;
+}
+#review-input {
+  width: 70%;
+  height: 120px;
+}
+.tab-list,
+.ui-tabs .ui-tabs-nav {
+  width: 100%;
+  margin: 0;
+  padding: 0 !important;
+  border: none;
+  background-color: #fff;
+}
+.ui-dialog-buttonpane {
+  border: none !important;
+}
+.add-tab {
+  border: none !important;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: none !important;
+}
+.ui-dialog-buttonpane {
+  display: flex;
+  justify-content: center;
+}
+.review-list-item a {
+  float: left;
+  text-align: center;
+  color: #747070;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #747070;
+  border-radius: 2px;
+  width: 8%;
+  height: 5%;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.add-btn,
+.cancel-btn {
+  width: 12%;
+  margin: 0 10px 0px 0px;
+  background-color: #ccc8c8;
+  padding: 4px 10px;
+  border: 1px solid #5a5959;
+}
+.ui-tabs-tab {
+  border-radius: 0 !important;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+  border-top-left-radius: 0 !important;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+  border-top-right-radius: 0 !important;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+  border-bottom-left-radius: 0 !important;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+  border-bottom-right-radius: 0 !important;
+}
+.ui-icon-background,
+.ui-state-active .ui-icon-background {
+  border: none !important;
+  background-color: #ffffff;
+}
+.reviewer-input {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+#reviewer {
+  margin: 2px 0;
+  width: 70%;
+  height: 40px;
+}
+// .ui-dialog {
+//   padding: 0 !important;
+// }
+.ui-dialog .ui-dialog-content {
+  padding: 0.2em 0.5em !important;
+}

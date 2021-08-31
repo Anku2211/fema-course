@@ -1,0 +1,12 @@
+{
+  "name": "adapt-review",
+  "version": "1.0.0",
+  "framework": ">=5",
+  "extension": "review",
+  "displayName": "Review extension",
+  "description": "An extension that allows reviewers to add comment",
+  "main": "/js/review.js",
+  "keywords": ["adapt-plugin", "adapt-extension"],
+  "license": "GPL-3.0",
+  "targetAttribute": "_review"
+}

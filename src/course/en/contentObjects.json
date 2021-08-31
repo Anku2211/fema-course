@@ -1,0 +1,24 @@
+[
+  {
+    "title": "New Menu/Page Title",
+    "displayTitle": "New Menu/Page Title",
+    "body": "",
+    "_classes": "",
+    "subtitle": "",
+    "pageBody": "",
+    "instruction": "",
+    "_htmlClasses": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_lockType": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_id": "6124b614ed8c6d0a94372e13",
+    "_type": "page",
+    "_parentId": "course"
+  }
+]
