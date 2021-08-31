@@ -1,0 +1,591 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "grunt-file",
+  "steps": [
+    {
+      "file": "Gruntfile.js",
+      "description": "On running the debugger it is coming here",
+      "line": 4
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "Then it is coming to this helpers.js which is exporting this function",
+      "line": 7
+    },
+    {
+      "file": "Gruntfile.js",
+      "description": "Then it is requiring time-grunt by passing grunt",
+      "line": 6
+    },
+    {
+      "file": "Gruntfile.js",
+      "description": "then it is requiring load-grunt-config by passing grunt and an object with these properties",
+      "line": 7,
+      "selection": {
+        "start": {
+          "line": 7,
+          "character": 3
+        },
+        "end": {
+          "line": 16,
+          "character": 6
+        }
+      }
+    },
+    {
+      "file": "Gruntfile.js",
+      "description": "Then for data it is calling helpers.generateConfigData function",
+      "line": 8
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "Then it will come here ",
+      "line": 184,
+      "selection": {
+        "start": {
+          "line": 184,
+          "character": 1
+        },
+        "end": {
+          "line": 234,
+          "character": 5
+        }
+      }
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "Getting all these paths \n1. root = '/Users/pyi/dev/courses/fema-virtual-vendor-demo-export'\n2. sourcedir = src/\n3. outputdir = build/\n4. jsonext = json",
+      "line": 186,
+      "selection": {
+        "start": {
+          "line": 186,
+          "character": 1
+        },
+        "end": {
+          "line": 189,
+          "character": 71
+        }
+      }
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "Then it is getting configDir as src/",
+      "line": 199
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "Then it is getting a configPath as '/Users/pyi/dev/courses/fema-virtual-vendor-demo-export/src/course/config.json'",
+      "line": 202
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "Then it i sdefining data by adding all these properties",
+      "line": 211,
+      "selection": {
+        "start": {
+          "line": 211,
+          "character": 1
+        },
+        "end": {
+          "line": 220,
+          "character": 7
+        }
+      }
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "And it is returning the data",
+      "line": 233
+    },
+    {
+      "file": "Gruntfile.js",
+      "description": "Then it is calling grunt.config by passing 'helpers' and helpers variable which we have imported",
+      "line": 18
+    },
+    {
+      "file": "Gruntfile.js",
+      "description": "Then calling grunt.registerTask by passing default and help ",
+      "line": 19
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "Then it is coming to this registerTask",
+      "line": 7,
+      "selection": {
+        "start": {
+          "line": 7,
+          "character": 1
+        },
+        "end": {
+          "line": 42,
+          "character": 6
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "getting options which is having \n\nsrc:(4) ['src/components/**/bower.json', 'src/extensions/**/bower.json', 'src/menu/**/**/bower.json', 'src/theme/**/**/bower.json']\n\nbaseUrl:'src/'\n\nallowedProperties:{bower: Array(12), package: Array(5)}",
+      "line": 8
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "Then for buildconfig it is calling Helprs.generateConfigdata function",
+      "line": 10
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "Then it will come here and will return the data",
+      "line": 184,
+      "selection": {
+        "start": {
+          "line": 184,
+          "character": 1
+        },
+        "end": {
+          "line": 234,
+          "character": 5
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "Getting buildConfigPath as 'build/adapt/js/build.min.js'\n",
+      "line": 11
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "getting allowProperties",
+      "line": 13
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "Then it is reading the main package.json file and assigning to buildConfig.package",
+      "line": 16
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "It allowProperties.package ['name', 'version', 'description', 'repository', 'license'] then it is picking allowProperties.package from buildConfig.package and assigning to buildConfig.package \n\nlicense:'GPL-3.0'\ndescription:'Adapt Learning output framework'\nname:'adapt_framework'\nrepository:{type: 'git', url: 'git://github.com/adaptlearning/adapt_framework.git'}\nversion:'5.2.0'\n",
+      "line": 17,
+      "selection": {
+        "start": {
+          "line": 17,
+          "character": 1
+        },
+        "end": {
+          "line": 19,
+          "character": 6
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "Then it is calling grunt.file.expand by passing all these ",
+      "line": 23,
+      "selection": {
+        "start": {
+          "line": 23,
+          "character": 1
+        },
+        "end": {
+          "line": 32,
+          "character": 8
+        }
+      }
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "then it is coming here and returning filePath 'src/components/adapt-contrib-accordion/bower.json' for this component",
+      "line": 315,
+      "selection": {
+        "start": {
+          "line": 315,
+          "character": 1
+        },
+        "end": {
+          "line": 317,
+          "character": 5
+        }
+      }
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "Then it is coming here taking the pluginPath as 'src/components/adapt-contrib-accordion/bower.json'",
+      "line": 260,
+      "selection": {
+        "start": {
+          "line": 260,
+          "character": 1
+        },
+        "end": {
+          "line": 296,
+          "character": 5
+        }
+      }
+    },
+    {
+      "file": "grunt/config/build-config.js",
+      "description": "Then it is coming to this filter function",
+      "line": 2,
+      "selection": {
+        "start": {
+          "line": 2,
+          "character": 1
+        },
+        "end": {
+          "line": 2,
+          "character": 11
+        }
+      }
+    },
+    {
+      "file": "grunt/config/build-config.js",
+      "description": "Taking this filePath 'src/components/adapt-contrib-accordion/bower.json' and checking for the path and returning it will do it for every component, extensions, menu and theme",
+      "line": 11,
+      "selection": {
+        "start": {
+          "line": 11,
+          "character": 1
+        },
+        "end": {
+          "line": 13,
+          "character": 9
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "then it will come here and for each options.src whih is this \n0:'src/components/**/bower.json'\n1:'src/extensions/**/bower.json'\n2:'src/menu/**/**/bower.json'\n3:'src/theme/**/**/bower.json' taking bowerJSONPath, reading the bower.json and assigning to the plugin and if allowedProperties.bower then adding that property to the plugin and pushing that to the buildConfig.plugins for every component, extension, menu and theme",
+      "line": 26,
+      "selection": {
+        "start": {
+          "line": 26,
+          "character": 4
+        },
+        "end": {
+          "line": 32,
+          "character": 8
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "Getting hideAttributes",
+      "line": 35
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "Then gor each hideAttributes it is taking attrName and deleting it from the buildConfig",
+      "line": 36,
+      "selection": {
+        "start": {
+          "line": 36,
+          "character": 1
+        },
+        "end": {
+          "line": 38,
+          "character": 8
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/build-config.js",
+      "description": "Then it is writing buildConfigPath which is this 'build/adapt/js/build.min.js' with buildConfig data",
+      "line": 40
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "Then it will again come here and then check for assets and libraries path for every component, extensions, theem and menu and return the path",
+      "line": 315,
+      "selection": {
+        "start": {
+          "line": 315,
+          "character": 1
+        },
+        "end": {
+          "line": 317,
+          "character": 5
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/schema-defaults.js",
+      "description": "Then it will come here and getting all these data",
+      "line": 14,
+      "selection": {
+        "start": {
+          "line": 14,
+          "character": 4
+        },
+        "end": {
+          "line": 22,
+          "character": 49
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/schema-defaults.js",
+      "description": "Then for each pluginType getting pluginType an pluginTypeIndex getting pluginCategory and pluginTypeGlob",
+      "line": 25,
+      "selection": {
+        "start": {
+          "line": 25,
+          "character": 2
+        },
+        "end": {
+          "line": 29,
+          "character": 82
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/schema-defaults.js",
+      "description": "Then it is calling grunt.file.expand by passing filter as isDirectory",
+      "line": 30
+    },
+    {
+      "file": "grunt/tasks/schema-defaults.js",
+      "description": "Then for each component inside the components folder it is taking pluginPath and getting currentPluginPath, currentSchemaPath, currentBowerPath, currentSchemaJson and currentBowerJson ",
+      "line": 32,
+      "selection": {
+        "start": {
+          "line": 31,
+          "character": 1
+        },
+        "end": {
+          "line": 52,
+          "character": 70
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/schema-defaults.js",
+      "description": "Then for each currentSchemaJson.globals item it is executing this function",
+      "line": 55,
+      "selection": {
+        "start": {
+          "line": 55,
+          "character": 1
+        },
+        "end": {
+          "line": 63,
+          "character": 8
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/schema-defaults.js",
+      "description": "Then getting all these data",
+      "line": 65,
+      "selection": {
+        "start": {
+          "line": 65,
+          "character": 1
+        },
+        "end": {
+          "line": 70,
+          "character": 63
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/schema-defaults.js",
+      "description": "Then for Each languageFolderPath \n1. currentCourseFolder = 'src/course/en'\n2. currentCourseJsonFile = 'src/course/en'\n3. outputDirCourseJson = 'build/course/en/course.json'\n\ngetting currentCourseJson by reading outputDirCourseJson and then writing outputDirCourseJson with currentCourseJson",
+      "line": 71,
+      "selection": {
+        "start": {
+          "line": 71,
+          "character": 1
+        },
+        "end": {
+          "line": 83,
+          "character": 8
+        }
+      }
+    },
+    {
+      "file": "grunt/config/handlebars.js",
+      "description": "Theen it is coming here and for every handebar file it is executing this filter function and if satisfies the condition then returning true",
+      "line": 17,
+      "selection": {
+        "start": {
+          "line": 17,
+          "character": 1
+        },
+        "end": {
+          "line": 35,
+          "character": 12
+        }
+      }
+    },
+    {
+      "file": "grunt/config/handlebars.js",
+      "description": "Otherwise it is checking for helpers in grunt config fo rthe particular filePath",
+      "line": 34
+    },
+    {
+      "file": "grunt/tasks/handlebars.js",
+      "description": "Then it will come here and for each filePathe it it exist then returning true",
+      "line": 123,
+      "selection": {
+        "start": {
+          "line": 123,
+          "character": 1
+        },
+        "end": {
+          "line": 130,
+          "character": 9
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/handlebars.js",
+      "description": "Then for each filepath it is reading the filepath and assigning the data to src",
+      "line": 131,
+      "selection": {
+        "start": {
+          "line": 131,
+          "character": 1
+        },
+        "end": {
+          "line": 132,
+          "character": 73
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/handlebars.js",
+      "description": "Then it i sparsing the handlebars",
+      "line": 137,
+      "selection": {
+        "start": {
+          "line": 137,
+          "character": 1
+        },
+        "end": {
+          "line": 143,
+          "character": 14
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/handlebars.js",
+      "description": "Then compiling the ast",
+      "line": 138
+    },
+    {
+      "file": "grunt/tasks/handlebars.js",
+      "description": "If options.wrapped is true then it is getting compiled property",
+      "line": 141,
+      "selection": {
+        "start": {
+          "line": 141,
+          "character": 1
+        },
+        "end": {
+          "line": 143,
+          "character": 14
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/handlebars.js",
+      "description": "Then to get the filename it is calling processName by passing the filepath",
+      "line": 168
+    },
+    {
+      "file": "grunt/config/handlebars.js",
+      "description": "Then it will come here will get newFilePath by splitting all the slashes\nthis 'src/core/templates/article.hbs' to ['src', 'core', 'templates', 'article.hbs'] this then return a newFilePath as file name only as 'article'",
+      "line": 9,
+      "selection": {
+        "start": {
+          "line": 9,
+          "character": 1
+        },
+        "end": {
+          "line": 13,
+          "character": 11
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/handlebars.js",
+      "description": "Then if userNameSpace is true it is getting nsInfo by calling getNamespaceInfo by passing filepath",
+      "line": 169,
+      "selection": {
+        "start": {
+          "line": 169,
+          "character": 1
+        },
+        "end": {
+          "line": 173,
+          "character": 16
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/handlebars.js",
+      "description": "got nsinfo  as\n declaration:'this[\"Handlebars\"] = this[\"Handlebars\"] || {};\\nthis[\"Handlebars\"][\"templates\"] = this[\"Handlebars\"][\"templates\"] || {};'\n\n\nnamespace:'this[\"Handlebars\"][\"templates\"]'",
+      "line": 170
+    },
+    {
+      "file": "grunt/tasks/handlebars.js",
+      "description": "Then if nsInfo.declaration then it will push it to the declarations",
+      "line": 171,
+      "selection": {
+        "start": {
+          "line": 171,
+          "character": 1
+        },
+        "end": {
+          "line": 175,
+          "character": 69
+        }
+      }
+    },
+    {
+      "file": "grunt/tasks/tracking-insert.js",
+      "description": "Then it will come here registering task tracking-insert then cheking for adapt-contrib-spoor plugin and calling isPluginInstalled",
+      "line": 5,
+      "selection": {
+        "start": {
+          "line": 5,
+          "character": 2
+        },
+        "end": {
+          "line": 5,
+          "character": 124
+        }
+      }
+    },
+    {
+      "file": "grunt/helpers.js",
+      "description": "Then it will come here if plugin is present will return true otherwise it will return false",
+      "line": 251,
+      "selection": {
+        "start": {
+          "line": 251,
+          "character": 1
+        },
+        "end": {
+          "line": 258,
+          "character": 5
+        }
+      }
+    },
+    {
+      "file": "grunt/config/scripts.js",
+      "description": "Then for every bower file it is running scriptSafeFilter",
+      "line": 12,
+      "selection": {
+        "start": {
+          "line": 12,
+          "character": 1
+        },
+        "end": {
+          "line": 15,
+          "character": 6
+        }
+      }
+    }
+  ]
+}
