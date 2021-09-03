@@ -1,0 +1,1 @@
+adapt test component

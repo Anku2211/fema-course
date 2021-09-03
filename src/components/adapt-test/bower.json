@@ -1,0 +1,11 @@
+{
+  "name": "adapt-test",
+  "version": "1.0.0",
+  "framework": ">=5",
+  "component": "test",
+  "displayName": "Test",
+  "description": "A simple core contributed test component",
+  "main": "/js/test.js",
+  "keywords": ["adapt-plugin", "adapt-component"],
+  "license": "GPL-3.0"
+}
