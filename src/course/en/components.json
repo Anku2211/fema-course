@@ -1,5 +1,32 @@
 [
   {
+    "_component": "test",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Test component",
+    "displayTitle": "Test component",
+    "body": "",
+    "_test": ["Test1", "Test2", "Test3"],
+    "_id": "612f1c8172c34b8fed2a0b6f",
+    "_parentId": "6124b614ed8c6d0a94372e15",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "instruction": "",
+    "instructorNote": "",
+    "slideshowNote": "",
+    "printNote": ""
+  },
+  {
     "_component": "media",
     "_classes": "",
     "_isOptional": false,
@@ -14,7 +41,7 @@
     "_id": "6125d042c3088d281724b845",
     "_parentId": "6124b614ed8c6d0a94372e15",
     "_type": "component",
-    "_layout": "full",
+    "_layout": "right",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
@@ -29,7 +56,7 @@
       "source": "",
       "type": "",
       "poster": "",
-      "cc": []
+      "cc": [1, 2, 3]
     },
     "_setCompletionOn": "play",
     "_useClosedCaptions": false,
